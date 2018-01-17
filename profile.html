@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Lateef Ogunbadejo</title>
+    <link rel="icon" href="og.png" type="image/gif">
+    <style type="text/css">
+    	@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Nunito+Sans:400,600,700,800,900|Open+Sans:700');
+    	body{
+    		background-color: #6BCCCA;
+    		padding: 2% 8%;
+    	}
+
+    	section{
+    		width: 70%;
+    		margin-left: 20%;
+    		margin-top: 5.5%;
+    	}
+
+    	#logo{
+    		display: inline;
+    		font-family: 'Dancing Script', cursive;
+    		font-size: 40px;
+    	}
+
+    	#nav{
+    		float: right;
+    	}
+
+    	#nav li{
+    		font-family: 'Nunito Sans', sans-serif;
+    		font-weight: 800;
+    		list-style-type: none;
+    		display: inline;
+    		margin: 0 10px;
+    		cursor: pointer;
+    	}
+
+    	#nav li:hover{
+    		border-bottom: 5px solid #000000;
+    	}
+
+    	.active{
+    		color: #FFFFFF;
+    		border-bottom: 5px solid #FFFFFF;
+    	}
+
+    	#content1{
+    		float:left;
+    		width: 50%;
+    		margin-right: 10%;
+    	}
+    	#content2{
+    		position: relative;
+    		float:left;
+    		width:30%;
+    		z-index: -10;
+    	}
+
+    	#name{
+    		font-family: 'Open Sans', sans-serif;
+    		font-size: 60px;
+    		font-weight: bold;
+    		margin-bottom: 0;
+    		padding-top: 25px;
+    	}
+
+    	#bio{
+    		font-family: 'Nunito Sans', sans-serif;
+    		font-size: 20px;
+    		margin-top: 25px;
+    	}
+
+    	img{
+    		max-width: 100%;
+    		height: auto;
+    		border: 5px solid #FFFFFF;
+    		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    	}
+
+    	#bottom{
+    		font-family: 'Nunito Sans', sans-serif;
+    		font-weight: 800;
+    		position: absolute;
+    		right: 0;
+    		margin-right: -100px;
+    		margin-top: -50px;
+    	}
+
+    	#line{
+    		width: 120px;
+    		border-bottom: 1px solid #ffffff;
+    		margin-top: -33px;
+    		float: right;
+    		margin-right: -120px;
+    	}
+
+    	footer{
+    		width: 100vw;
+    		left: 0;
+    		right: 0;
+    		bottom: 0;
+    		position: absolute;
+    	}
+
+    	#footer{
+    		width: 100%;
+    		text-align: center;
+    	}
+
+    	#footer p{
+    		padding: 0;
+    		font-family: 'Nunito Sans', sans-serif;
+    		font-weight: bold;
+    	}
+
+    	.clearfix::after {
+    		content: "";
+    		clear: both;
+    		display: table;
+		}
+    </style>
+</head>
+<body>
+    <nav>
+    	<div>
+	    	<h1 id="logo">Og</h1>
+	    	<ul id="nav">
+	    		<li class="active">HOME</li>
+	    		<li>ABOUT</li>
+	    		<li>WORKS</li>
+	    		<li>CONTACT</li>
+	    	</ul>
+    	</div>
+    </nav>
+    <section class="clearfix">
+    	<div id="content1" >
+    		<h1 id="name">Hi, I'm <br> Lateef <br> Ogunbadejo</h1>
+    		<div id="line"></div>
+    		<p id="bio">I am a front end web developer and an aspiring user interface designer, working out of Lagos, Nigeria.</p>
+    	</div>
+    	<div id="content2">
+    		<img src="pic.JPG">
+    		<p id="bottom"> &gt; LETS WORK TOGETHER</p>
+    	</div>
+    </section>
+    <footer>
+    	<div id="footer">
+    		<p>lateefogunbadejo&copy;2018</p>
+    	</div>
+    </footer>
+</body>
+</html>

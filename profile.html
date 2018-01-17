@@ -2,6 +2,7 @@
 <html lang="en-US">
 <head>
     <title>Lateef Ogunbadejo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/Og.png" type="image/gif">
     <style type="text/css">
     	@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Nunito+Sans:400,600,700,800,900|Open+Sans:700');
@@ -97,8 +98,6 @@
     	footer{
     		width: 100vw;
     		left: 0;
-    		right: 0;
-    		bottom: 0;
     		position: absolute;
     	}
 
@@ -117,6 +116,42 @@
     		content: "";
     		clear: both;
     		display: table;
+		}
+
+		@media only screen and (max-width: 550px){
+			body{
+				padding: 2% 4%;
+				/*margin: 0;
+				top: 0;*/
+			}
+
+			section{
+	    		width: 100%;
+	    		margin-left: 0%;
+	    		margin-top: 5.5%;
+	    	}
+
+	    	#nav{
+    			clear: both;
+    			display: block;
+    			width: 100%;
+    		}
+
+    		#content1{
+	    		display: block;
+	    		width: 100%;
+	    		/*margin-right: 10%;*/
+	    	}
+	    	#content2{
+	    		display: block;
+	    		position: relative;
+	    		/*float:left;*/
+	    		width: 70%;
+	    		z-index: -10;
+	    	}
+	    	#line{
+	    		display: none;
+	    	}
 		}
     </style>
 </head>

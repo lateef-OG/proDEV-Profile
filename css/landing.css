@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito+Sans:200,300,400,700');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header{
+    padding: 2.5% 8%;
+}
+
+header h2{
+    display: inline-block;
+    margin: 0;
+    font-size: 28px;
+}
+
+nav{
+    display: inline;
+    float: right;
+    position: relative;
+}
+
+ul{
+    display: inline;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+#navButton{
+    padding: 10px 15px;
+    border: 2px solid #2192d8;
+    background-color: transparent;
+    color: #2192d8;
+    transition: 0.5s ease-in;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#navButton:hover{
+    background-color: #2192d8;
+    color: #ffffff;
+}
+
+#main-image{
+    width: 100%;
+    height: auto;
+    background-image: url('../images/cars.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 10% 10%;
+    color: #FFFFFF;
+}
+
+#line{
+    width: 10%;
+    border-bottom: 0.5px solid #FFFFFF;
+    margin: 4% auto;
+}
+
+#main-image button{
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+.centered-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#benefits-section{
+    width: 100%;
+    padding: 3% 8%;
+}
+
+.benefit-icon{
+    margin-top: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50px;
+    background-color: #f6fbfe;
+    padding: 30px;
+}
+
+.sub-benefit{
+    padding: 10px 20px;
+}
+
+.sub-benefit p{
+    color: #666666;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+#prices{
+    width: 100%;
+    padding: 3% 10%;
+    background-image: url('../images/cars1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-right: 25px;
+    margin-top: 40px;
+}
+
+.card-heading{
+    text-align: center;
+    padding: 15px;
+}
+
+.card-heading span{
+    font-size: 22px;
+}
+
+.card-price{
+    background-color: #fcfdff;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 30px;
+    border-top: 1px solid #e9edf0;
+    border-bottom: 1px solid #e9edf0;
+}
+
+.card-price h1{
+    font-weight: 200;
+}
+
+.big{
+    font-size: 56px;
+}
+
+.card-content{
+    text-align: center;
+    padding: 15px;
+    color: #555555;
+}
+
+.mad-button{
+    display: block;
+    margin: auto;
+    margin-top: -35px;
+    background-color: #293f56;
+    border: 1px solid #293f56;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.card-content ul{
+    width: 100%;    
+    list-style-position: inside;
+}
+
+.card-content ul>li{
+    margin-top: 15px;
+}
+
+.plan-button{
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #2192d8;
+    background-color: transparent;
+    color: #2192d8;
+    transition: 0.5s ease-in;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.plan-button:hover{
+    background-color: #2192d8;
+    color: white;
+}
+
+#popular{
+    text-align: center;
+    background-color: #46b570;
+    margin-bottom: -40px;
+    /* margin-top: -10px; */
+    margin-right: 40px;
+    margin-left: 20px;
+    height: 40px;
+    padding: 12px;
+    z-index: 1;
+    position: relative;
+    color: #ffffff;
+    
+}
+
+#popular h4{
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.popular{
+    outline: 5px solid rgba(0,0,0, .2);
+}
+
+.popular-heading{
+    background-color: #263749;
+    color: #FFFFFF;
+}
+
+.popular-price{
+    background-color: #707cd0;
+    border: 1px solid #707cd0;
+}
+
+.popular-button{
+    background-color: #707cd0;
+    color: #FFFFFF;
+    border: 2px solid #707cd0;
+}
+
+.white{
+    color: #FFFFFF;
+}
+
+#features{
+    width: 100%;
+    padding: 3% 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#features div.container{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#features div.equal{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#image > img{
+    right: 0;
+    position: absolute;
+}
+
+#features-nav{
+    font-size: 0;
+    padding: 0;
+}
+
+#features-nav li{
+    display: inline-block;
+    border: 1px solid #999999;
+    padding: 10px 25px;
+    font-size: 20px;
+    margin-left: -1px;
+    color: #777777;
+    cursor: pointer;
+}
+
+#features-nav li.active{
+    background-color: #2192d8;
+    color: #FFFFFF;
+    border: 1px solid #2192d8;
+}
+
+#feature-list{
+    list-style-image: url('../images/check-24.png');
+    color: #555555;
+}
+
+#feature-list li{
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.equal{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 20px;
+}
+
+.equal-footer{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#enquiry{
+    padding: 5% 0;
+    text-align: center;
+    background-color: #707cd0;
+    color: #FFFFFF;
+    margin-top: 0;
+    border-top: 0.5px solid #555555;
+    position: relative;
+    z-index: 1;
+}
+
+#enquiryButton{
+    padding: 15px 20px;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    transition: 0.5s ease-in;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#enquiryButton:hover {
+    background-color: #FFFFFF;
+    color: #707cd0;
+}
+
+#enquiryButton{
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+#testimonials{
+    width: 100%;
+    padding: 3% 10%;
+    background-color: #f6fbfe; 
+}
+
+.left-align{
+    text-align: left;
+}
+
+.no-padding{
+    padding: 0;
+}
+#study{
+    padding: 5% 0;
+    text-align: center;
+    background-color: #1391db;
+    color: #FFFFFF;
+}
+
+#study button:hover{
+    background-color: #FFFFFF;
+    color: #1391db;
+}
+
+#make-enquiry{
+    width: 100%;
+    padding: 3% 10%; 
+}
+
+#make-enquiry input[type=text], #make-enquiry input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+#make-enquiry textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+    resize: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#make-enquiry input[type=submit]{
+    background-color: #2092d8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .5s ease-in;
+    border: 2px solid #2092d8;
+}
+
+#make-enquiry input[type=submit]:hover {
+    background-color: #ffffff;
+    color: #2092d8;
+}
+
+#make-enquiry div.equal {
+    padding: 20px 40px;
+}
+
+footer{
+    width: 100%;
+    padding: 1% 10%;
+    background-color: #293f56;
+    color: #FFFFFF;
+}
+
+.right{
+    float: right;
+}
+
+.right img{
+    margin-left: 15px;
+}
+
+.email{
+    text-decoration: underline;
+    color: green;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.light{
+    font-weight: 200;
+}
+
+h2.light{
+    font-size: 46px;
+    color: #555555;
+}
+
+.blue{
+    color: #2192d8;
+}
+
+.medium{
+    font-weight: 200;
+    color: #f1f1f1;
+    font-size: 56px;
+}
+
+#demo-button{
+    background-color: #707cd0;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #707cd0;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 20px 15px;
+    transition: 0.2s ease-out;
+    margin-right: 20px;
+}
+
+#demo-button:hover{
+    outline: 3px solid rgba(255,255,255, .5);
+}
+
+#video-button{
+    background-color: #45b46f;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #45b46f;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 20px 15px;
+    transition: 0.2s ease-out;
+}
+
+#video-button:hover{
+    outline: 3px solid rgba(255,255,255, .5);
+}
+
+.light-black{
+    color: #888888;
+}
+
+.regular{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.card svg{
+    margin-bottom: -25px;
+    z-index: -10;
+}
+
+.centered-heading img{
+    border-radius: 50%;
+    margin-top: 40px;
+    width: 120px;
+    height: 120px;
+}
+
+.card-border{
+    border: 0.5px solid #999999;
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        padding: 2% 2%;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    #navButton{
+        font-size: 14px;
+    }
+
+    .medium{
+        font-size: 36px;
+    }
+
+    #demo-button{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .container{
+        display: block;
+    }
+
+    #benefits-section{
+        padding: 3% 4%;
+    }
+
+    .child-flex{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #popular{
+        margin-top: 40px;
+    }
+
+    .benefit-icon{
+        margin-top: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        background-color: #f6fbfe;
+        padding: 15px;
+    }
+
+    .benefit-icon > img{
+        width: 30px;
+        height: 30px;
+    }
+
+    #prices{
+        padding-bottom: 10%;
+    }
+
+    #features-nav li{
+        display: inline-block;
+        padding: 10px 25px;
+        font-size: 20px;
+        border: none;
+        border-top: 0.2px solid #666666;
+        margin-top: 0;
+        color: #777777;
+        cursor: pointer;
+        width: 100%;
+        background-color: #f7f7f7;
+    }
+    
+    #features-nav li.active{
+        background-color: #2192d8;
+        color: #FFFFFF;
+        border: 1px solid #2192d8;
+    }
+
+    #image{
+        right: 0;
+        overflow: hidden;
+    }
+
+    #image > img{
+        width: 100%;
+        position: static;
+        overflow-x: hidden;
+    }
+
+    #enquiry{
+        padding: 5% 5%;
+    }
+
+    #testimonials{
+        padding: 2% 5%;
+    }
+
+    #study{
+        padding: 5% 5%;
+    }
+
+    #make-enquiry{
+        padding: 2% 2%;
+    }
+
+    footer{
+        padding: 1% 1%;
+    }
+
+    footer div.equal-footer{
+        display: inline-block;
+    }
+}
